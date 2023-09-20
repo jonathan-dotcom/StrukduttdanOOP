@@ -15,10 +15,6 @@ struct Character {
     int experience;
     int stamina;
     int agility;
-
-    Character(const string& n, int l, int hp, int mp, int atk, int mgi, int def, int exp, int st, int agl)
-        : name(n), level(l), health(hp), mana(mp), attack(atk), magic(mgi), defense(def), experience(exp), stamina(st), agility(agl) {
-    }
 };
 
 void displayCharacter(const Character& character) {
@@ -52,30 +48,29 @@ int main() {
         switch (choice) {
             case 1: // Menambah data karakter
                 {
-                    string name;
-                    int level, health, mana, attack, magic, defense, experience, stamina, agility;
+                    Character character;
                     cout << "Enter character name: ";
                     cin.ignore();
-                    getline(cin, name);
+                    getline(cin, character.name);
                     cout << "Enter character level: ";
-                    cin >> level;
+                    cin >> character.level;
                     cout << "Enter character health: ";
-                    cin >> health;
+                    cin >> character.health;
                     cout << "Enter character mana: ";
-                    cin >> mana;
+                    cin >> character.mana;
                     cout << "Enter character attack: ";
-                    cin >> attack;
+                    cin >> character.attack;
                     cout << "Enter character magic: ";
-                    cin >> magic;
+                    cin >> character.magic;
                     cout << "Enter character defense: ";
-                    cin >> defense;
+                    cin >> character.defense;
                     cout << "Enter character experience: ";
-                    cin >> experience;
+                    cin >> character.experience;
                     cout << "Enter character stamina: ";
-                    cin >> stamina;
+                    cin >> character.stamina;
                     cout << "Enter character agility: ";
-                    cin >> agility;
-                    characters.emplace_back(name, level, health, mana, attack, magic, defense, experience, stamina, agility);
+                    cin >> character.agility;
+                    characters.push_back(character);
                     cout << "Character added successfully!\n";
                 }
                 break;

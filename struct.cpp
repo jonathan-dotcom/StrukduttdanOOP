@@ -14,7 +14,7 @@ struct Character {
     int defense;
     int experience;
     int stamina;
-    int agility; // New attribute
+    int agility;
 };
 
 void displayCharacter(const Character& character) {
@@ -95,7 +95,7 @@ int main() {
                     cout << "No characters to erase!\n";
                 }
                 break;
-            case 4: // Exit
+            case 4:
                 cout << "Exiting the program.\n";
                 return 0;
             default:
