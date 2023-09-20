@@ -10,11 +10,14 @@ struct Character {
     int health;
     int mana;
     int attack;
+    int magic;
     int defense;
     int experience;
+    int stamina;
+    int agility;
 
-    Character(const string& n, int l, int hp, int mp, int atk, int def, int exp)
-        : name(n), level(l), health(hp), mana(mp), attack(atk), defense(def), experience(exp) {
+    Character(const string& n, int l, int hp, int mp, int atk, int mgi, int def, int exp, int st, int agl)
+        : name(n), level(l), health(hp), mana(mp), attack(atk), magic(mgi), defense(def), experience(exp), stamina(st), agility(agl) {
     }
 };
 
@@ -24,8 +27,11 @@ void displayCharacter(const Character& character) {
     cout << "Health: " << character.health << "\n";
     cout << "Mana: " << character.mana << "\n";
     cout << "Attack: " << character.attack << "\n";
+    cout << "Magic: " << character.magic << "\n";
     cout << "Defense: " << character.defense << "\n";
     cout << "Experience: " << character.experience << "\n";
+    cout << "Stamina: " << character.stamina << "\n";
+    cout << "Agility: " << character.agility << "\n";
     cout << "--------------------------\n";
 }
 
@@ -47,7 +53,7 @@ int main() {
             case 1: // Menambah data karakter
                 {
                     string name;
-                    int level, health, mana, attack, defense, experience;
+                    int level, health, mana, attack, magic, defense, experience, stamina, agility;
                     cout << "Enter character name: ";
                     cin.ignore();
                     getline(cin, name);
@@ -59,11 +65,17 @@ int main() {
                     cin >> mana;
                     cout << "Enter character attack: ";
                     cin >> attack;
+                    cout << "Enter character magic: ";
+                    cin >> magic;
                     cout << "Enter character defense: ";
                     cin >> defense;
                     cout << "Enter character experience: ";
                     cin >> experience;
-                    characters.emplace_back(name, level, health, mana, attack, defense, experience);
+                    cout << "Enter character stamina: ";
+                    cin >> stamina;
+                    cout << "Enter character agility: ";
+                    cin >> agility;
+                    characters.emplace_back(name, level, health, mana, attack, magic, defense, experience, stamina, agility);
                     cout << "Character added successfully!\n";
                 }
                 break;
