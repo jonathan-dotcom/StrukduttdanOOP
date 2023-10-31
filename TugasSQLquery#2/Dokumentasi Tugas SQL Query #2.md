@@ -14,11 +14,11 @@ INNER JOIN lecturer
 ON task.id_dos = lecturer.id;
 ```
 
-![Screenshot from 2023-10-30 22-11-41.png](Dokumentasi%20Tugas%20SQL%20Query%20#2%208db6c0994f394ea08704f028667dfcc2/Screenshot_from_2023-10-30_22-11-41.png)
+![Screenshot from 2023-10-30 22-11-41.png](https://github.com/jonathan-dotcom/StrukduttdanOOP/tree/main/TugasSQLquery%232/Dokumentasi%20Tugas%20SQL%20Query%20%232/Screenshot_from_2023-10-30_22-11-41.png)
 
 Screenshot hasil
 
-![Screenshot from 2023-10-30 23-22-44.png](Dokumentasi%20Tugas%20SQL%20Query%20#2%208db6c0994f394ea08704f028667dfcc2/Screenshot_from_2023-10-30_23-22-44.png)
+![Screenshot from 2023-10-30 23-22-44.png](https://github.com/jonathan-dotcom/StrukduttdanOOP/tree/main/TugasSQLquery%232/Dokumentasi%20Tugas%20SQL%20Query%20%232/Screenshot_from_2023-10-30_23-22-44.png)
 
 Jumlah = 100
 
@@ -35,7 +35,7 @@ ON task.id_mk = course.id
 WHERE lecturer.name_lecturer LIKE 'H%';
 ```
 
-![Screenshot from 2023-10-30 22-50-49.png](Dokumentasi%20Tugas%20SQL%20Query%20#2%208db6c0994f394ea08704f028667dfcc2/Screenshot_from_2023-10-30_22-50-49.png)
+![Screenshot from 2023-10-30 22-50-49.png](https://github.com/jonathan-dotcom/StrukduttdanOOP/tree/main/TugasSQLquery%232/Dokumentasi%20Tugas%20SQL%20Query%20%232/Screenshot_from_2023-10-30_22-50-49.png)
 
 Jumlah = 3
 
@@ -52,11 +52,11 @@ ON task.id_mk = course.id
 WHERE task.score BETWEEN 60 AND 80;
 ```
 
-![Screenshot from 2023-10-30 22-54-12.png](Dokumentasi%20Tugas%20SQL%20Query%20#2%208db6c0994f394ea08704f028667dfcc2/Screenshot_from_2023-10-30_22-54-12.png)
+![Screenshot from 2023-10-30 22-54-12.png](https://github.com/jonathan-dotcom/StrukduttdanOOP/tree/main/TugasSQLquery%232/Dokumentasi%20Tugas%20SQL%20Query%20%232/Screenshot_from_2023-10-30_22-54-12.png)
 
 Screenshot hasil
 
-![Screenshot from 2023-10-30 23-24-47.png](Dokumentasi%20Tugas%20SQL%20Query%20#2%208db6c0994f394ea08704f028667dfcc2/Screenshot_from_2023-10-30_23-24-47.png)
+![Screenshot from 2023-10-30 23-24-47.png](https://github.com/jonathan-dotcom/StrukduttdanOOP/tree/main/TugasSQLquery%232/Dokumentasi%20Tugas%20SQL%20Query%20%232/Screenshot_from_2023-10-30_23-24-47.png)
 
 Jumlah = 18
 
@@ -69,10 +69,10 @@ ON task.id_mhs = student.id
 WHERE task.id is NULL;
 ```
 
-![Screenshot from 2023-10-30 23-02-33.png](Dokumentasi%20Tugas%20SQL%20Query%20#2%208db6c0994f394ea08704f028667dfcc2/Screenshot_from_2023-10-30_23-02-33.png)
+![Screenshot from 2023-10-30 23-02-33.png](https://github.com/jonathan-dotcom/StrukduttdanOOP/tree/main/TugasSQLquery%232/Dokumentasi%20Tugas%20SQL%20Query%20%232/Screenshot_from_2023-10-30_23-02-33.png)
 
 Screenshot hasil
 
-![Screenshot from 2023-10-30 23-25-53.png](Dokumentasi%20Tugas%20SQL%20Query%20#2%208db6c0994f394ea08704f028667dfcc2/Screenshot_from_2023-10-30_23-25-53.png)
+![Screenshot from 2023-10-30 23-25-53.png](https://github.com/jonathan-dotcom/StrukduttdanOOP/tree/main/TugasSQLquery%232/Dokumentasi%20Tugas%20SQL%20Query%20%232/Screenshot_from_2023-10-30_23-25-53.png)
 
 Jumlah = 438
