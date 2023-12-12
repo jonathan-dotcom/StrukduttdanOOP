@@ -87,9 +87,7 @@ int main() {
             cout << "1. Digital Item" << endl;
             cout << "2. Physical Item" << endl;
         } else if(input = 4){
-            cout << "===== Select =====" << endl;
-            cout << "1. Digital Item" << endl;
-            cout << "2. Physical Item" << endl;
+            storage.displayItems();
         } 
     }
     
