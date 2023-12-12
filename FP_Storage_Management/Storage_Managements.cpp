@@ -58,19 +58,19 @@ int main() {
         cout << "4. Display Item" << endl;
         cin >> input;
         
-        if(input = 1 ){
+        if (input == 1 ){
             cout << "===== Select =====" << endl;
             cout << "1. Digital Item" << endl;
             cout << "2. Physical Item" << endl;
             cin >> menuInput;
-            if(menuInput = 1){
+            if (menuInput == 1){
                 cout << "Enter item's id . . ." << endl;
                 cin >> itemId;
                 cout << "Enter item's name  . . ." << endl;
                 cin >> itemName;
                 DigitalItem* digitalItem = new DigitalItem(itemName, itemId);
                 storage.addItem(digitalItem);
-            } else if (menuInput = 2){
+            } else if (menuInput == 2){
                 cout << "Enter item's id . . ." << endl;
                 cin >> itemId;
                 cout << "Enter item's name  . . ." << endl;
@@ -78,15 +78,15 @@ int main() {
                 PhysicalItem* physicalItem = new PhysicalItem(itemName, itemId);
                 storage.addItem(physicalItem);
             }
-        } else if(input = 2){
+        } else if (input == 2){
             cout << "===== Select =====" << endl;
             cout << "1. Digital Item" << endl;
             cout << "2. Physical Item" << endl;
-        } else if(input = 3){
+        } else if (input == 3){
             cout << "===== Select =====" << endl;
             cout << "1. Digital Item" << endl;
-            cout << "2. Physical Item" << endl;
-        } else if(input = 4){
+            cout << "tes" << endl;
+        } else if (input == 4){
             storage.displayItems();
         } 
     }
